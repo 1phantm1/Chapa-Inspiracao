@@ -8,7 +8,6 @@ burguer_icon.addEventListener("click", function burguer() {
   if (!isopen) {
     closed.style.display = "block"
     menu.classList.toggle("open")
-    
     overlay.style.display = "block"
   } else {
     closed.style.display = "none"

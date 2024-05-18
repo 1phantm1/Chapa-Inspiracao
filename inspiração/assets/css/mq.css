@@ -1,15 +1,19 @@
-/*media query settings*/
-@media screen and (min-width: 600px){
-        .menu ul{  
-        display: inline;
+@media screen and (min-width: 610px){
+    
+    .close{
+        display: none;
+    }
+    .burguer-icon{
+        display: none;
+    }
+    .menu{
         position: absolute;
-        background-color: black;
-        top: 0;
-    }   
-    .burguer-menu{
-        display: none;
+        top: 0 !important;
+        height: 50px !important;
+        flex-direction: row !important;
     }
-    .menu .close{
-        display: none;
+    .menu li button{
+        width: 100px !important;
     }
+
 }
