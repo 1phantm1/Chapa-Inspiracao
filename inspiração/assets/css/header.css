@@ -11,8 +11,10 @@
     display: none;    
 }
 header{
+    position: fixed;
     width: 100%;
     height: 50px;
+    z-index: 100;
     background-color: var(--dark_green);
 }
 
@@ -22,6 +24,7 @@ header{
     right: 48%;
 }
 .burguer-menu i{
+    margin-top: 8px;
     font-size: 2em;
     cursor: pointer;
 }
@@ -75,7 +78,7 @@ header{
 }
 .close{
     display: none;
-    z-index: 2;
+    z-index: 50;
     cursor: pointer;
     font-size: 2em;
     position: absolute;

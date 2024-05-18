@@ -17,9 +17,11 @@ burguer_icon.addEventListener("click", function burguer() {
 
 closed.addEventListener("click", () => {
   if (isopen) {
-    closed.style.display = "none"
     overlay.style.display = "none"
+    closed.style.display = "none"
     menu.classList.remove("open")
+  } else{
+    closed.style.display = "block"
   }
   isopen = !isopen
 })
