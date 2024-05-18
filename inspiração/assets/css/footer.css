@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*footer settings*/
+
+.footer{
+    font-size: 10px;
+    font-family: var(--Osans);
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    top: 89%;
+    background-color: var(--dark_green);
+    width: 100vw;
+    height: 50px;
+}
