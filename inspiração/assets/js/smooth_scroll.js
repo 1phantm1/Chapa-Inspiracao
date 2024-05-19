@@ -37,6 +37,9 @@ ScrollReveal().reveal('.propostas_resumo p', {
     delay: 500 
 });
 ScrollReveal().reveal('.proposta_block', { 
+    reset: true,
+    duration: 1000,
+    easing: "ease-out",
     origin: 'bottom', 
     distance: '50px', 
     duration: 1000, 

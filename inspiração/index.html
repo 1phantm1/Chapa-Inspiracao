@@ -3,88 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapa inspiração - Home</title>
+    <meta name="description" content="Página oficial da Chapa Inspiração!">
+    <meta name="keywords" content="chapa, inspiração, chapa-inspiração, inspiracao, chapa-inspiracao, gremio, gremio, gremio-estudantil, grêmio-estudantil, escola, presidencia, presidência, tezza, padre-tezza, colégio-tezza, colegio-tezza">
+    <title>Chapa Inspiração - Home</title>
     <link rel="shortcut icon" href="/inspiração/assets/images/cropped-icone-192x192.png" type="image/x-icon">
-    <!--start CSS-->
+    <!--Start CSS Links-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mq.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/intro.css">
     <link rel="stylesheet" href="assets/css/propostas.css">
-    <!--End CSS-->
+    <!--End CSS Links-->
     <!--Start Scripts-->
     <script defer src="assets/js/menu.js"></script>
     <script defer src="assets/js/smooth_scroll.js"></script>
     <script defer src="assets/js/navigate.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/7351777d54.js" crossorigin="anonymous"></script>
-    <!--end scripts-->
+    <!--End Scripts-->
 </head>
 <body>
+    <!--OBS: Não esquecer do banco de dados!!!-->
     <div class="overlay" id="overlay"></div>
     <header id="inicio">
         <div class="burguer-menu">
             <i id="burguer-icon" class="fa-solid fa-bars burguer-icon"></i>
         </div>
-            <i id="close" class="fa-solid fa-xmark close"></i>
-            <ul id="menu_list" class="menu">
-                <li><button id="inicio">Início</button></li>
-                <li><button id="projetos">Projetos</button></li>
-                <li><button id="propostas">Propostas</button></li>
-                <li><button id="noticias">Noticias</button></li>
-                <li><button id="membros">Membros</button></li>
-                <!--Burguer menu-->
-            </ul>
+        <i id="close" class="fa-solid fa-xmark close"></i>
+        <ul id="menu_list" class="menu">
+            <li><button id="inicio_btn">Início</button></li>
+            <li><button id="projetos">Projetos</button></li>
+            <li><button id="propostas">Propostas</button></li>
+            <li><button id="noticias">Noticias</button></li>
+            <li><button id="membros">Membros</button></li>
+        </ul>
     </header>
     <main>
         <section class="intro">
-            <h1>Bem-vindo à página oficial da Chapa Inspiração!</h1>    
-            <p>A Chapa Inspiração é dedicada a promover mudanças no Tezza e construir um ambiente de estudo melhor e mais acolhedor. Criamos esta página para que você possa acompanhar nossos projetos, propostas, conhecer nossa equipe e ficar por dentro das últimas notícias do colégio.</p> 
-            <!--Lembrar de adicionar db para comentários, registro ou/e interação-->
-            <button><a id="meet_propost" href="#auto_propost">Conheça nossas <span class="proposts_span">Propostas</span></a></button>
+            <h1>Bem-vindo à página oficial da Chapa Inspiração!</h1>
+            <p>A Chapa Inspiração é dedicada a promover mudanças no Tezza e construir um ambiente de estudo melhor e mais acolhedor. Criamos esta página para que você possa acompanhar nossos projetos, propostas, conhecer nossa equipe e ficar por dentro das últimas notícias do colégio.</p>
+            <button><a href="#auto_propost">Conheça nossas <span class="proposts_span">Propostas</span></a></button>
         </section>
-        <section class="propostas_resumo" id="propostas">
+        <section class="propostas_resumo">
             <h2>Conheça as propostas da chapa</h2>
-            <p>Nossa chapa tem várias ideias para melhorar o cólegio cada vez mais. Algumas das nossas propostas são: </p><br>
+            <p>Nossa chapa tem várias ideias para melhorar o cólegio cada vez mais. Algumas das nossas propostas são:</p><br>
             <div class="propostas_blocks">
                 <div class="proposta_block collumn_1">
-                    <!--remember: image or icon to represent-->
                     <h3>trote geral <i class="fas fa-theater-masks no_margin"></i></h3>
-                    <p>Todas as salas escolhem um tema e vão para escola fantasiados.</p> <!--brief description-->
+                    <p>Todas as salas escolhem um tema e vão para escola fantasiados.</p>
                 </div>
                 <div class="proposta_block collumn_1">
-                    <!--remember: image or icon to represent-->
                     <h3>jornal <i class="fas fa-newspaper"></i></h3>
-                    <p>Um mural com notícias da escola e de fora</p> <!--brief description-->
+                    <p>Um mural com notícias da escola e de fora</p>
                 </div>
                 <div class="proposta_block collumn_1">
-                    <!--remember: image or icon to represent-->
                     <h3>Bazar <i class="fas fa-store"></i></h3>
-                    <p>As pessoas doam e a chapa faz um bazar para arrecadar fundos.</p> <!--brief description-->
+                    <p>As pessoas doam e a chapa faz um bazar para arrecadar fundos.</p>
                 </div>
                 <div class="proposta_block collumn_2">
-                    <!--remember: image or icon to represent-->
                     <h3>leitura <i class="fas fa-book-reader"></i></h3>
-                    <p>Dias em que todas as salas leem livros umas pras outras.</p> <!--brief description-->
+                    <p>Dias em que todas as salas leem livros umas pras outras.</p>
                 </div>
                 <div class="proposta_block collumn_2">
-                    <!--remember: image or icon to represent-->
                     <h3>cinema <i class="fas fa-film"></i></h3>
-                    <p>Um dia onde alunos escolhem um filme e assistem na escola.</p> <!--brief description-->
+                    <p>Um dia onde alunos escolhem um filme e assistem na escola.</p>
                 </div>
                 <div class="proposta_block collumn_2" id="auto_propost">
-                    <!--remember: image or icon to represent-->
                     <h3>Calendários <i class="fas fa-calendar-alt no_margin"></i></h3>
-                    <p>mural com a data dos aniversários dos alunos da sala.</p> <!--brief description-->
+                    <p>Deixar um calendário com todos os eventos anuais mais os propostos pela chapa.</p>
                 </div>
             </div>
+            <div class="propostas_cta">
+                <p>Gostou das nossas propostas? Mas isso não é tudo! essas são só alguns dos nossos planos para o tezza. <a class="link_proposts" href="pages/propostas.html">Confira todas as propostas</a> e <span class="cta_17">Apoie 17 para um colégio melhor!</span></p>
+            </div>
         </section>
-        
-    </main>
+        <section class="who_are_we">
+            <h2>O que é a chapa inspiração?</h2>
+            <h3>Uma equipe dedicada a melhorias</h3>
+            <p>
+                <p class="p1">Cansado da mesma rotina de sempre?</p>
 
-    <!--<footer class="footer">
-        <p>&copy; Pietro D'Avila & Chapa Inspiração</p>
-    </footer>-->
+                <p class="p2">Quer uma escola que <b>te dê voz?</b></p>
+
+                <p>Então <span class="cta_17">vote na Chapa Inspiração!</span></p>
+
+                <p>Somos um grupo de alunos que cansou da mesmice e decidiu <span class="diferenca">fazer a diferença.</span><br> Acreditamos que a escola deve ser um lugar onde todos se sintam acolhidos, respeitados e motivados a aprender enquanto se divertem. Por isso, nossa missão é:</p>
+
+                <ul>
+                    <li>Garantir que os alunos sejam ouvidos e que suas ideias sejam consideradas nas decisões da escola.</li>
+                    <li>Criar um ambiente de aprendizado dinâmico e interativo, com aulas que realmente despertem o interesse dos alunos.</li>
+                    <li>Promover eventos que melhorem a vida escolar dos alunos.</li>
+                    <li>Melhorar a infraestrutura da escola, tornando-a um ambiente acessível e divertido.</li>
+                    <li>Acreditamos que a educação é a chave para um futuro melhor, e queremos que todos os alunos do Tezza tenham a oportunidade de aprender enquanto se divertem.</li>
+                </ul>
+
+                <p><span class="cta_17">Vote 17</span> e Junte-se a nós para construir juntos uma escola mais inspiradora e engajadora!</p>
+            </p>
+        </section>
+    </main>
+    <!--
+    <footer>
+        <div>
+            <p>Feito com <span>&#10084;</span> por Carol.</p>
+        </div>
+    </footer>
+    -->
 </body>
 </html>

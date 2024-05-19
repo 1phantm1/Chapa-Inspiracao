@@ -1,10 +1,39 @@
+@media screen and (max-width: 600px){
+    .propostas_resumo{
+        position: absolute;
+        top: 105% !important;
+    }
+    .proposta_block{
+        width: 47% !important;
+    }
+    .collumn_2{
+        margin-left: 5px;
+        height: 240px !important;
+    }
+}
+@media screen and (max-width: 310px){
+    .propostas_resumo{
+        position: absolute;
+        top: 115% !important;
+    }
+    .proposta_block{
+        width: 100% !important;
+        height: 180px !important; 
+    }
+}
+@media screen and (max-width: 400px){
+    .propostas_resumo h2{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 460px){
+    .propostas_resumo{
+        top: 90%;
+    }
+}
 
 @media screen and (min-width: 610px){
   
-    .propostas_resumo{
-        position: absolute;
-        top: 68% !important;
-    }
     .proposta_block{
         width: 48% !important;
     }
@@ -30,14 +59,16 @@
 
 }
 @media screen and (min-width: 910px){
-    .intro button{
-        display: none;
-    }
+
     .propostas_resumo{
-        top: 50% !important;
+        position: absolute;
+        top: 70% !important;
     }
     .proposta_block{
         width: 30% !important;
+    }
+    .collumn_2{
+        height: 240px !important; 
     }
 }
 @media screen and (min-width: 1210px){
