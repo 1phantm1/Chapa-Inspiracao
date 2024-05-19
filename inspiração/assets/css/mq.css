@@ -53,6 +53,10 @@
     .menu li button{
         width: 100px !important;
     }
+    .pop-up{
+        width: 80% !important;
+        
+    }
 
 }
 @media screen and (min-width: 910px){
@@ -73,8 +77,16 @@
     .members{
         top: 240% !important;
     }
+    .pop-up{
+        width: 58% !important;
+
+    }
 }
 @media screen and (min-width: 1210px){
+    .cta{
+        position: absolute;
+        top: 40% !important;
+    }
     .proposta_block{
         width: 15% !important;
     }

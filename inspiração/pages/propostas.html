@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propostas - Chapa inspiração</title>
-    <link rel="shortcut icon" href="/inspiração/assets/images/cropped-icone-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/inspiração/assets/images/cropped-icone-192x192.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mq.css">
+    <link rel="stylesheet" href="../assets/css/propostas.html.css">
+
+    <script defer src="../assets/js/navigate.js"></script>
+    <script defer src="../assets/js/scrool_reveal.propostas.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/7351777d54.js" crossorigin="anonymous"></script>
+    <script defer src="../assets/js/menu.js"></script>
+    <script defer src="../assets/js/pop-up.js"></script>
+
 </head>
-<body>
-    
+
+<body id="body">
+    <div class="overlay" id="overlay"></div>
+    <header class="inicio" id="inicio">
+        <div class="burguer-menu">
+            <i id="burguer-icon" class="fa-solid fa-bars burguer-icon"></i>
+        </div>
+        <i id="close" class="fa-solid fa-xmark close"></i>
+        <ul id="menu_list" class="menu">
+            <li><button id="inicio_btn"><a href="#">Início</a></button></li>
+            <li><button id="projetos"><a href=""><a href="#">Projetos</a></a></button></li>
+            <li><button id="propostas_btn"><a href="#">Propostas</a></button></li>
+            <li><button id="noticias"><a href="#">Noticias</a></button></li>
+            <li><button id="membros"><a href="#">Membros</a></button></li>
+        </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>O Grêmio que faz diferença!</h1>
+                <p class="p1">Trabalhando para garantir nossos direitos e construir uma escola melhor</p>
+                <button class="cta"><a href="#goToSection">conheça nossas propostas</a></button>
+            </div>
+        </section>
+        <section class="propostas">
+            <div class="container">
+                <h1>Construindo uma escola melhor e inclusiva</h1>
+                <p>A escola precisa de mudanças, e a chapa inspiração está aqui para fazer acontecer</p>
+                <h2 class="h2">Integração e diversão: </h2>
+                <ul>
+                    <li>Painel de Jornal da Escola</li>
+                    <li>Arrecadação por meio de Bazar, Sorteios e Rifas</li>
+                    <li>Doação de Livros e Leitura Comunitária</li>
+                    <li>Doação de Roupas</li>
+                    <li>Calendário com Aniversários</li>
+                    <li>Comemorações no Final dos Trimestres</li>
+                    <li>Dias de Palestras</li>
+                    <li>Concursos com Prêmios</li>
+                    <li>Nas Datas Comemorativas Propor Atividades</li>
+                    <li>Caixinha de Opiniões e/ou blog</li>
+                </ul>
+                <h2 class="h2">Ação Social e Conscientização</h2>
+                <ul>
+                    <li>Campanhas de prevenção</li>
+                    <li>Campanha de alimentos</li>
+                    <li>Reciclagem de lixo</li>
+                </ul>
+                <h2 id="goToSection" class="h2">Entretenimento e Lazer</h2>
+                <ul>
+                    <li>Festas temáticas todos os meses</li>
+                    <li>Mais passeios culturais</li>
+                    <li>Dicas de estudos</li>
+                </ul>
+                <h2 class="h2">Eventos especiais</h2>
+                <ul>
+                    <li>Semana da Cultura</li>
+                    <li>Semana das Artes</li>
+                    <li>Sessão de Cinema</li>
+                </ul>
+                <h2 class="h2">Propostas para os pequenos</h2>
+                <ul>
+                    <li>Dia da Leitura</li>
+                    <li>Noite do Pijama</li>
+                    <li>Dia do Cabelo Maluco</li>
+                    <li>Atividades em Datas Comemorativas</li>
+                </ul>
+            </div>
+        </section>
+        <section class="call-to-action">
+            <div class="pop-up" id="pop-up">
+                <i id="close-pop-up" class="fa-solid fa-xmark"></i>
+                <h3>Quer contribuir com a nossa chapa? você tem algumas opções!</h3>
+                <ol>
+                    <li>Vote 17 no dia 22/5/24!</li>
+                    <li>convença outras pessoas a votar 17!</li>
+                    <li>Nos siga no instagram e engaje o conteúdo!</li>
+                    <li>Distribua panfletos pelo tezza, pode ser um QR code ou link para este site, ou um simples "vote 17"</li>
+                    <li>Contribua com ideias ou sugestões para a chapa!</li>
+                </ol>
+            </div>
+            <div class="container cta_container">
+                <h2>Participe e faça a diferença!</h2>
+                <p>Vote 17 e ajude a tornar nossas propostas realidade!</p>
+                <button id="cta">Saiba como colaborar</button>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const closeIcon = document.querySelector("i#close");
   const menu = document.querySelector("ul#menu_list");
   const overlay = document.querySelector("div#overlay");
+  const body = document.querySelector("body#body")
   let isOpen = false;
 
   burguerIcon.addEventListener("click", function burguerI() {
@@ -10,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
       menu.classList.add("open");
       closeIcon.style.display = "block";
       overlay.style.display = "block";
+      body.style.overflow = "hidden"
+
       isOpen = true;
   });
 
@@ -18,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
       menu.classList.remove("open");
       closeIcon.style.display = "none";
       overlay.style.display = "none";
+      body.style.overflow = "auto"
       isOpen = false;
   });
 
@@ -27,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
           menu.classList.remove("open");
           closeIcon.style.display = "none";
           overlay.style.display = "none";
+          body.style.overflow = "auto"
           isOpen = false;
       }
   });

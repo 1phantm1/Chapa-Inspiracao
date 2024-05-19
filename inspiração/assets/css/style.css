@@ -28,6 +28,7 @@ body{
     --RCB: "Radio Canada Big", Arial, Helvetica, sans-serif;
     --inter: "Inter", Arial, Helvetica, sans-serif;
     --main_green: #2ECC40;
+    --black: #333;
     --main_white: #FFFFFF;
     --text: #769c72;
     --text2: #46ff5b;
@@ -35,6 +36,6 @@ body{
     --yellow: #f6f652;
     --orange: #FF8C00;
     --dark_green: #208820;
-    --light_blue: #87CEEB;
-    --dark_blue: #1500ff;
+    --light_blue: #007bff;
+    --dark_blue: #0056b3;
 }

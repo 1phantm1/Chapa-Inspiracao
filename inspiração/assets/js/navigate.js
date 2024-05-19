@@ -5,8 +5,8 @@ const news = document.querySelector("button#noticias")
 const members = document.querySelector("button#membros")
 const meet_propost = document.querySelector("button#membro")
 home.addEventListener("click", () => {
-    window.location.href = "C:\Users\DAVILL08\Documents\Chapa-Inspiracao\inspiração\index.html"
+    window.location.href = "index.html"
 })
 proposts.addEventListener("click", () => {
-    window.location.href = "C:\Users\DAVILL08\Documents\Chapa-Inspiracao\inspiração\pages\propostas.html"
+    window.location.href = "inspiração\pages\propostas.html"
 })
