@@ -70,6 +70,9 @@
     .who_are_we{
         top: 145% !important;
     }
+    .members{
+        top: 240% !important;
+    }
 }
 @media screen and (min-width: 1210px){
     .proposta_block{
