@@ -17,7 +17,12 @@
 .who_are_we ul li{
     padding-top: 5px;
     padding-bottom: 20px;
+    list-style-type: square;
 }
 .diferenca{
     color: var(--main_green);   
+}
+.margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

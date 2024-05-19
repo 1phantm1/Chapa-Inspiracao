@@ -33,10 +33,7 @@
 }
 
 @media screen and (min-width: 610px){
-  
-    .proposta_block{
-        width: 48% !important;
-    }
+ 
     .collumn_1{
         height: 50px;
         background-color: black;
@@ -69,6 +66,9 @@
     }
     .collumn_2{
         height: 240px !important; 
+    }
+    .who_are_we{
+        top: 145% !important;
     }
 }
 @media screen and (min-width: 1210px){

@@ -7,3 +7,6 @@ const meet_propost = document.querySelector("button#membro")
 home.addEventListener("click", () => {
     window.location.href = "C:\Users\DAVILL08\Documents\Chapa-Inspiracao\inspiração\index.html"
 })
+proposts.addEventListener("click", () => {
+    window.location.href = "C:\Users\DAVILL08\Documents\Chapa-Inspiracao\inspiração\pages\propostas.html"
+})
