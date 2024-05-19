@@ -86,5 +86,26 @@ ScrollReveal().reveal(".who_are_we li", {
     duration: 1000,
     delay: 500
 })
+ScrollReveal().reveal(".members h3", {
+    reset: true,
+    origin: "bottom",
+    distance: "500px",
+    duration: 1000,
+    delay: 500,
+})
 
+ScrollReveal().reveal(".members .card", {
+    reset: true,
+    origin: "left",
+    distance: "500px",
+    duration: 1000,
+    delay: 500,
+})
+ScrollReveal().reveal(".members p", {
+    reset: true,
+    origin: "right",
+    distance: "500px",
+    duration: 1000,
+    delay: 500,
+})
 
