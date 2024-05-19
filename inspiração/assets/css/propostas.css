@@ -55,24 +55,3 @@
 }
 .cta_17{
     color: var(--text2);
-}
-.who_are_we{
-    font-family: var(--inter);
-    position: absolute;
-    top: 280%;
-    left: 0;
-    margin: 15px;
-}
-.who_are_we h2, .who_are_we h3{
-    margin-bottom: 15px;
-}
-.who_are_we .p1, .p2{
-    padding-bottom: 15px;
-}
-.who_are_we ul li{
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-.diferenca{
-    color: var(--main_green);   
-}
