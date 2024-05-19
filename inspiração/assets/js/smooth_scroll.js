@@ -1,110 +1,31 @@
-
-// Scroll suave para o botão
-document.querySelector('button a').addEventListener('click', function(event) {
+// ScrollReveal configuration
+const scrollReveal = ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 1000,
+    easing: 'ease-out',
+  });
+  
+  // Smooth scrolling to button
+  document.querySelector('button a').addEventListener('click', function(event) {
     event.preventDefault();
     const targetId = this.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     targetElement.scrollIntoView({ behavior: 'smooth' });
-});
+  });
 
-// Configuração do ScrollReveal
-ScrollReveal().reveal('.intro h1', { 
-    reset: true,
-    origin: 'left', 
-    distance: '100px', 
-    duration: 1000 
-});
-ScrollReveal().reveal('.intro p', { 
-    reset: true,
-    origin: 'right', 
-    distance: '100px', 
-    duration: 1000, 
-    delay: 500 
-});
-ScrollReveal().reveal('.intro button', { 
-    reset: true,
-    origin: 'bottom', 
-    distance: '50px', 
-    duration: 1000, 
-    delay: 1000 
-});
-ScrollReveal().reveal('.propostas_resumo h2', { 
-    reset: true,
-    origin: 'left', 
-    distance: '100px', 
-    duration: 1000 
-});
-ScrollReveal().reveal('.propostas_resumo p', { 
-    reset: true,
-    origin: 'right', 
-    distance: '100px', 
-    duration: 1000, 
-    delay: 500 
-});
-ScrollReveal().reveal('.proposta_block', { 
-    reset: true,
-    easing: "ease-out",
-    origin: 'bottom', 
-    distance: '50px', 
-    duration: 500,
-    delay: 100,
-});
-ScrollReveal().reveal(".who_are_we h2", {
-    reset: true,
-    origin: "top",
-    distance: "70px",
-    duration: 500,
-    delay: 100,
-})
-ScrollReveal().reveal(".who_are_we h3", {
-    reset: true,
-    origin: "right",
-    distance: "500px",
-    duration: 500,
-    delay: 100,
-})
-ScrollReveal().reveal(".who_are_we h4", {
-    reset: true,
-    origin: "bottom",
-    distance: "150px",
-    duration: 500,
-    delay: 100,
-})
-ScrollReveal().reveal(".who_are_we p", {
-    reset: true,
-    origin: "left",
-    distance: "250px",
-    duration: 500,
-    delay: 100,
-})
-
-ScrollReveal().reveal(".who_are_we li", {
-    reset: true,
-    origin: "right",
-    distance: "350px",
-    duration: 500,
-    delay: 100,
-})
-ScrollReveal().reveal(".members h3", {
-    reset: true,
-    origin: "bottom",
-    distance: "500px",
-    duration: 500,
-    delay: 100,
-})
-
-ScrollReveal().reveal(".members .card", {
-    reset: true,
-    origin: "left",
-    distance: "500px",
-    duration: 500,
-    delay: 100,
-})
-ScrollReveal().reveal(".members p", {
-    reset: true,
-    origin: "right",
-    distance: "500px",
-    duration: 500,
-    delay: 100,
-})
-
+  // Media query for adjusting distance and delay on mobile devices
+scrollReveal.reveal('.intro h1', { distance: '50px' });
+scrollReveal.reveal('.intro p', { distance: '75px', delay: 250 });
+scrollReveal.reveal('.intro button', { distance: '25px', delay: 500 });
+scrollReveal.reveal('.propostas_resumo h2', { distance: '50px' });
+scrollReveal.reveal('.propostas_resumo p', { distance: '75px', delay: 250 });
+scrollReveal.reveal('.proposta_block', { distance: '25px', delay: 50 });
+scrollReveal.reveal(".who_are_we h2", { distance: "50px" });
+scrollReveal.reveal(".who_are_we h3", { distance: "250px", delay: 50 });
+scrollReveal.reveal(".who_are_we h4", { distance: "150px", delay: 50 });
+scrollReveal.reveal(".who_are_we p", { distance: "200px", delay: 50 });
+scrollReveal.reveal(".who_are_we li", { distance: "300px", delay: 50 });
+scrollReveal.reveal(".members h3", { distance: "250px", delay: 50 });
+scrollReveal.reveal(".members .card", { distance: "300px", delay: 50 });
+scrollReveal.reveal(".members p", { distance: "350px", delay: 50 });
