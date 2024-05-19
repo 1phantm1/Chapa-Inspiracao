@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const overlay = document.querySelector("div#overlay");
   let isOpen = false;
 
-  burguerIcon.addEventListener("click", function() {
+  burguerIcon.addEventListener("click", function burguerI() {
       overlay.classList.add("open");
       menu.classList.add("open");
       closeIcon.style.display = "block";

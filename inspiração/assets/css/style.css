@@ -2,26 +2,32 @@
 /*Default settings*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
 :root{
     --montserrat: "Montserrat", sans-serif;
     --Osans: "Open Sans", sans-serif;
     --main_green: #2ECC40;
     --main_white: #FFFFFF;
     --text: #769c72;
+    --grey: #626262;
     --yellow: #f6f652;
     --orange: #FF8C00;
     --dark_green: #208820;
     --light_blue: #87CEEB;
     --dark_blue: #1500ff;
-}
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
 }

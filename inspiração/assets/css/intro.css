@@ -37,6 +37,10 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-bottom: 40px;
 }
+.intro button a{
+    text-decoration: none;
+    color: var(--main_white);
+}
 .intro button:hover{
     background-color: #68b27d;
     transform: scale(1.05);

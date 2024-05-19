@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/propostas.css">
     <!--End CSS-->
     <!--Start Scripts-->
     <script defer src="assets/js/menu.js"></script>
     <script defer src="assets/js/smooth_scroll.js"></script>
+    <script defer src="assets/js/navigate.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/7351777d54.js" crossorigin="anonymous"></script>
     <!--end scripts-->
@@ -27,18 +29,56 @@
         </div>
             <i id="close" class="fa-solid fa-xmark close"></i>
             <ul id="menu_list" class="menu">
-                <li><button onclick="scrollToSection('intro')">Início</button></li>
-                <li><button>Projetos</button></li>
-                <li><button>Propostas</button></li>
-                <li><button>Noticias</button></li>
-                <li><button>Membros</button></li>
+                <li><button id="inicio">Início</button></li>
+                <li><button id="projetos">Projetos</button></li>
+                <li><button id="propostas">Propostas</button></li>
+                <li><button id="noticias">Noticias</button></li>
+                <li><button id="membros">Membros</button></li>
+                <!--Burguer menu-->
             </ul>
     </header>
     <main>
         <section class="intro">
             <h1>Bem-vindo à página oficial da Chapa Inspiração!</h1>    
-            <p>A Chapa Inspiração é dedicada a promover mudanças no Tezza e construir um ambiente de estudo melhor e mais acolhedor. Criamos esta página para que você possa acompanhar nossos projetos, propostas, conhecer nossa equipe e ficar por dentro das últimas notícias do colégio.</p> <!--Lembrar de adicionar db para comentários, registro de alunos ou/e interação-->
-            <button onclick="scrollToSection('projetos')">Conheça nossas <span class="proposts_span">Propostas</span></button>
+            <p>A Chapa Inspiração é dedicada a promover mudanças no Tezza e construir um ambiente de estudo melhor e mais acolhedor. Criamos esta página para que você possa acompanhar nossos projetos, propostas, conhecer nossa equipe e ficar por dentro das últimas notícias do colégio.</p> 
+            <!--Lembrar de adicionar db para comentários, registro ou/e interação-->
+            <button><a id="meet_propost" href="#auto_propost">Conheça nossas <span class="proposts_span">Propostas</span></a></button>
+        </section>
+        <section class="propostas_resumo" id="propostas">
+            <h2>Conheça as propostas da chapa</h2>
+            <p>Nossa chapa tem várias ideias para melhorar o cólegio cada vez mais. Algumas das nossas propostas são: </p><br>
+            <div class="propostas_blocks">
+                <div class="proposta_block collumn_1">
+                    <!--remember: image or icon to represent-->
+                    <h3>trote geral <i class="fas fa-theater-masks no_margin"></i></h3>
+                    <p>Todas as salas escolhem um tema e vão para escola fantasiados.</p> <!--brief description-->
+                </div>
+                <div class="proposta_block collumn_1">
+                    <!--remember: image or icon to represent-->
+                    <h3>jornal <i class="fas fa-newspaper"></i></h3>
+                    <p>Um mural com notícias da escola e de fora</p> <!--brief description-->
+                </div>
+                <div class="proposta_block collumn_1">
+                    <!--remember: image or icon to represent-->
+                    <h3>Bazar <i class="fas fa-store"></i></h3>
+                    <p>As pessoas doam e a chapa faz um bazar para arrecadar fundos.</p> <!--brief description-->
+                </div>
+                <div class="proposta_block collumn_2">
+                    <!--remember: image or icon to represent-->
+                    <h3>leitura <i class="fas fa-book-reader"></i></h3>
+                    <p>Dias em que todas as salas leem livros umas pras outras.</p> <!--brief description-->
+                </div>
+                <div class="proposta_block collumn_2">
+                    <!--remember: image or icon to represent-->
+                    <h3>cinema <i class="fas fa-film"></i></h3>
+                    <p>Um dia onde alunos escolhem um filme e assistem na escola.</p> <!--brief description-->
+                </div>
+                <div class="proposta_block collumn_2" id="auto_propost">
+                    <!--remember: image or icon to represent-->
+                    <h3>Calendários <i class="fas fa-calendar-alt no_margin"></i></h3>
+                    <p>mural com a data dos aniversários dos alunos da sala.</p> <!--brief description-->
+                </div>
+            </div>
         </section>
         
     </main>

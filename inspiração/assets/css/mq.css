@@ -1,5 +1,17 @@
+
 @media screen and (min-width: 610px){
-    
+  
+    .propostas_resumo{
+        position: absolute;
+        top: 68% !important;
+    }
+    .proposta_block{
+        width: 48% !important;
+    }
+    .collumn_1{
+        height: 50px;
+        background-color: black;
+    }
     .close{
         display: none;
     }
@@ -16,4 +28,20 @@
         width: 100px !important;
     }
 
+}
+@media screen and (min-width: 910px){
+    .intro button{
+        display: none;
+    }
+    .propostas_resumo{
+        top: 50% !important;
+    }
+    .proposta_block{
+        width: 30% !important;
+    }
+}
+@media screen and (min-width: 1210px){
+    .proposta_block{
+        width: 15% !important;
+    }
 }

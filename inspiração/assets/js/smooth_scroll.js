@@ -1,19 +1,44 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuLinks = document.querySelectorAll("ul.menu button")
 
-    menuLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault()
-            const target_id = this.getAttribute("href").substring(1)
-            const targetSection = document.querySelector(target_id)
+// Scroll suave para o botão
+document.querySelector('button a').addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+});
 
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: "smooth"
-            })
-
-            document.querySelector("div#overlay").style.display = "none"
-            document.querySelector("ul#menu_list".classList.remove("open"))
-        })
-    })
-})
+// Configuração do ScrollReveal
+ScrollReveal().reveal('.intro h1', { 
+    origin: 'left', 
+    distance: '100px', 
+    duration: 1000 
+});
+ScrollReveal().reveal('.intro p', { 
+    origin: 'right', 
+    distance: '100px', 
+    duration: 1000, 
+    delay: 500 
+});
+ScrollReveal().reveal('.intro button', { 
+    origin: 'bottom', 
+    distance: '50px', 
+    duration: 1000, 
+    delay: 1000 
+});
+ScrollReveal().reveal('.propostas_resumo h2', { 
+    origin: 'left', 
+    distance: '100px', 
+    duration: 1000 
+});
+ScrollReveal().reveal('.propostas_resumo p', { 
+    origin: 'right', 
+    distance: '100px', 
+    duration: 1000, 
+    delay: 500 
+});
+ScrollReveal().reveal('.proposta_block', { 
+    origin: 'bottom', 
+    distance: '50px', 
+    duration: 1000, 
+    interval: 200 
+});
