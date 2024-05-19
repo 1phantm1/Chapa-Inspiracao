@@ -1,27 +1,33 @@
-const burguer_icon = document.querySelector("i#burguer-icon")
-const closed = document.querySelector("i#close")
-const menu = document.querySelector("ul#menu_list")
-const overlay = document.querySelector("div#overlay")
-let isopen = false
+document.addEventListener("DOMContentLoaded", function() {
+  const burguerIcon = document.querySelector("i#burguer-icon");
+  const closeIcon = document.querySelector("i#close");
+  const menu = document.querySelector("ul#menu_list");
+  const overlay = document.querySelector("div#overlay");
+  let isOpen = false;
 
-burguer_icon.addEventListener("click", function burguer() {
-  if (!isopen) {
-    closed.style.display = "block"
-    menu.classList.toggle("open")
-    overlay.style.display = "block"
-  } else {
-    closed.style.display = "none"
-  }
-  isopen = !isopen
-})
+  burguerIcon.addEventListener("click", function() {
+      overlay.classList.add("open");
+      menu.classList.add("open");
+      closeIcon.style.display = "block";
+      overlay.style.display = "block";
+      isOpen = true;
+  });
 
-closed.addEventListener("click", () => {
-  if (isopen) {
-    overlay.style.display = "none"
-    closed.style.display = "none"
-    menu.classList.remove("open")
-  } else{
-    closed.style.display = "block"
-  }
-  isopen = !isopen
-})
+  closeIcon.addEventListener("click", function() {
+      overlay.classList.remove("open");
+      menu.classList.remove("open");
+      closeIcon.style.display = "none";
+      overlay.style.display = "none";
+      isOpen = false;
+  });
+
+  overlay.addEventListener("click", function() {
+      if (isOpen) {
+          overlay.classList.remove("open");
+          menu.classList.remove("open");
+          closeIcon.style.display = "none";
+          overlay.style.display = "none";
+          isOpen = false;
+      }
+  });
+});

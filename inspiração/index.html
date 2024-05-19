@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="assets/css/mq.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
     <!--End CSS-->
     <!--Start Scripts-->
     <script defer src="assets/js/menu.js"></script>
+    <script defer src="assets/js/smooth_scroll.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/7351777d54.js" crossorigin="anonymous"></script>
     <!--end scripts-->
 </head>
@@ -24,7 +27,7 @@
         </div>
             <i id="close" class="fa-solid fa-xmark close"></i>
             <ul id="menu_list" class="menu">
-                <li><button>Início</button></li>
+                <li><button onclick="scrollToSection('intro')">Início</button></li>
                 <li><button>Projetos</button></li>
                 <li><button>Propostas</button></li>
                 <li><button>Noticias</button></li>
@@ -32,22 +35,16 @@
             </ul>
     </header>
     <main>
-        <section id="projetos">
-
+        <section class="intro">
+            <h1>Bem-vindo à página oficial da Chapa Inspiração!</h1>    
+            <p>A Chapa Inspiração é dedicada a promover mudanças no Tezza e construir um ambiente de estudo melhor e mais acolhedor. Criamos esta página para que você possa acompanhar nossos projetos, propostas, conhecer nossa equipe e ficar por dentro das últimas notícias do colégio.</p> <!--Lembrar de adicionar db para comentários, registro de alunos ou/e interação-->
+            <button onclick="scrollToSection('projetos')">Conheça nossas <span class="proposts_span">Propostas</span></button>
         </section>
-        <section id="propostas">
-
-        </section>
-        <section id="noticias">
-
-        </section>
-        <section id="membros">
-
-        </section>
+        
     </main>
 
-    <footer class="footer">
+    <!--<footer class="footer">
         <p>&copy; Pietro D'Avila & Chapa Inspiração</p>
-    </footer>
+    </footer>-->
 </body>
 </html>

@@ -8,7 +8,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: opacity 0.3 ease;
-    display: none;    
+    display: none;  
+    z-index: 2;  
+}
+.overlay.open{
+    display: block;
+    opacity: 1;
 }
 header{
     position: fixed;
@@ -20,8 +25,9 @@ header{
 
 .burguer-menu{
     position: absolute;
-    top: 2%;
-    right: 48%;
+    top: 2px;
+    left: 50%;
+    transform: translate(-50%);
 }
 .burguer-menu i{
     margin-top: 8px;
@@ -76,6 +82,7 @@ header{
 .menu .open{
     top: calc(8% - 50px);
 }
+
 .close{
     display: none;
     z-index: 50;
@@ -83,4 +90,7 @@ header{
     font-size: 2em;
     position: absolute;
     left: 93%;
+}
+.menu.open ~ .close{
+    display: block;
 }
