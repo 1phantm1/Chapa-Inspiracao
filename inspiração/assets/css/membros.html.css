@@ -35,3 +35,21 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
+.membro-card p{
+    margin-top: 15px;
+}
+p.ig{
+    color: var(--black);
+    margin-top: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+p.ig:hover{
+    text-decoration: underline;
+}
+p.ig a{
+    text-decoration: none;
+    color: var(--black);
+}
+  
