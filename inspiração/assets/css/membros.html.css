@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-color: #f0f0f0;
+}
+
+.membros{
+    position: absolute;
+    top: 60%;   
+    padding: 40px;
+    
+}
+.membros h2{
+    text-align: center;
+    font-size: 32px;
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+.membro-grid{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.membro-card{
+    background-color: var(--main_white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.membro-card h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.membro-card p{
+    font-size: 16px;
+    line-height: 1.5;
+}
